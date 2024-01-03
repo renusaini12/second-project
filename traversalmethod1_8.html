@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html id="main">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            height: 200px;
+            width: 600px;
+            background-color: lightgreen;
+            
+        }
+        #inner{
+            height: 120px;
+            width: 500px;
+            background-color: lightpink;
+            margin-left:40px;
+            display: flex;
+        }
+        #inner div{
+            height: 40px;
+            width: 70px;
+            margin:5px;
+            margin-top: 40px;
+            background-color: white;
+            border:1px solid black;
+            padding-left: 30px;
+            padding-top: 20px;
+        }
+        #inner h2{
+            margin-top: -5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <h2>Outer</h2>
+    <div id="inner">
+        <h2>Inner</h2>
+        <!-- <div>A</div> -->
+        <div>B</div>
+        <div id="child-c">C</div>
+        <div>D</div>
+        <div>E</div>
+    </div>
+    </div>
+    <script src="traversalmethod.js"></script>
+</body>
+</html>

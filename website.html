@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="website.css">
+
+  <title>Hello, world!</title>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="free.jpg" alt="logo" style="height: 50px;width: 80px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Service</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact</a>
+          </li>
+
+
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-but">
+            <a class="btn btn-outline-light" href="#">SignUp</a>
+          </li>
+          <li class="nav-but" onclick="popup1()" style="color: white; cursor: pointer;"> Login
+            <!-- <a class="btn btn-outline-light" href="#" onclick="popup1()">Login</a> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imag1.jpg" class="d-block w-100" alt="..." style="height: 400px;">
+      </div>
+      <div class="carousel-item">
+        <img src="imag2.jpg" class="d-block w-100" alt="..."style="height: 400px;">
+      </div>
+      <div class="carousel-item">
+        <img src="imag3.jpg" class="d-block w-100" alt="..."style="height: 400px;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <form id="ok">
+    <div id="form">
+      <p style="font-size: 20px; text-align: start; padding-left: 170px;">Sign in<i class="fa-solid fa-xmark" onclick="pop()"
+          style="margin-left: 200px;"></i></p>
+      <div id="icon"><i class="fa-brands fa-google-plus"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i sclass="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+      <label for="">Enter Username:</label>
+      <input type="text" placeholder="Enter your name" style="height: 12px;"><br><br><br>
+      <label for="">Enter Password:</label>
+      <input type="text" placeholder="Enter your password" style="height:12px;"><br><br><br>
+      <button>SIGNIN</button>
+      <h5>Forgot Password?</h5>
+      <h5>Don't have an account?<em style="color: blue;">SIGN UP FOR FREE</em></h5>
+    </div>
+  </form>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="website.js"></script>
+
+</body>
+
+</html>
