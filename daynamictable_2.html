@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 1px;
+            margin: 2px;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>How to Create Dynamic Table</h1>
+    <label for="">No of Rows</label>
+    <input type="text"id ="rows"onkeyup="createtable()"><br>
+    <label for="">No of Cols</label>
+    <input type="text"id = "cols"onkeyup="createtable()"><br>
+    <button onclick="createtable()">Submit</button>
+    <div id="tablearea">
+
+    </div>
+    <script src="daynamictable_2.js"></script>
+</body>
+</html>
