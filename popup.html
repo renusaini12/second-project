@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #o{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(228, 228, 150);
+            margin-top:-400px;
+            margin-left: 200px;
+            text-align: center;
+            display:none;
+            z-index: 0;
+
+        }
+        #contain{
+            height: 400px;
+            width: 650px;
+            background-color: lightseagreen;
+            margin: 50px;
+            background-image: url("smartphn.jpg");
+            background-size: cover;
+            
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: right;
+            gap: 30px;
+            font-size: 15px;
+            padding-top: 10px;
+            padding-right: 10px;
+            color: white;
+        }
+        #form{
+            margin-left: 10px;
+            /* border: 1px solid black; */
+        }
+        input{
+            border: none;
+            text-align: center;
+            border-bottom: 1px solid black;
+            background-color: transparent;
+        }
+        button{
+            background-color: blue;
+            border-radius: 5px;
+        }
+       #icon{
+        height: 20px;
+        width:250px;
+        /* border: 1px solid black; */
+        margin-top: -20px;
+        margin-left: 10px;
+       }
+       
+     
+    </style>
+</head>
+<body>
+    <div id="contain">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li onclick="popup()">Login</li>
+    </ul>
+    </div>
+        <form action=""id="o">
+            <div id="form">
+                <p style="font-size: 20px; text-align: start;">Sign in<i class="fa-solid fa-xmark" onclick="pop()" style="margin-left: 200px;"></i></p>
+                <div id="icon"><i class="fa-brands fa-google-plus"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            <label for="">Enter Username:</label>
+            <input type="text"placeholder="Enter your name" style="height: 12px;"><br><br><br>
+            <label for="">Enter Password:</label>
+            <input type="text"placeholder="Enter your password"style="height:12px;"><br><br><br>
+            <button>SIGNIN</button>
+            <h5>Forgot Password?</h5>
+            <h5>Don't have an account?<em style="color: blue;">SIGN UP FOR FREE</em></h5>
+        </div>
+        </form>
+   <script src="popup.js"></script> 
+</body>
+</html>
