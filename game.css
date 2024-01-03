@@ -1,0 +1,14 @@
+#tab{
+    height: 300px;
+    width: 300px;
+    border: 2px solid blue;
+}
+table td{
+    border: 2px solid blue;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(143, 143, 182);
+}
+td{
+    text-align: center;
+}
